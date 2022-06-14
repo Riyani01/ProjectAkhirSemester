@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!--Script di atas merupakan script untuk mengatur dasar dari activity_main.
+    Pada script tersebut ditambahkan warna background yaitu berwarna putih dengan menuliskan : android:background="@color/white"
+    Sehingga warna dasar pada tampilan activity_main adalah putih. -->
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="260dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/txtWelcomeback"
+        android:textColor="@color/blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Script di atas merupakan:
+    1.Sebuah Palette common yang berjenis textView.
+    2. Pada textView ini diberi id agar memudahkan saat pemanggilan nantinya,
+    id textView ini bernama : textWelcome.
+    3. textView ini memiliki width:260dp,heigh:63dp, marginTop:60dp yang semuanya diatur melalui drag and drop.
+    4. -->
+
+    <Button
+        android:id="@+id/buttonSignin"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/buttonSignin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <!-- -->
+
+    <Button
+        android:id="@+id/buttonCencel"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/textCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignin" />
+    <!-- -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="540dp"
+        android:elegantTextHeight="false"
+        android:hint="@string/buttonContinue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+    <!-- -->
+
+    <ImageView
+        android:id="@+id/imageAwal"
+        android:layout_width="282dp"
+        android:layout_height="231dp"
+        android:contentDescription="@string/gambarAwal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.573"
+        app:srcCompat="@drawable/bbb" />
+    <!-- -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

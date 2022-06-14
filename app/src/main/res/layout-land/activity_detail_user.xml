@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUser">
+
+    <!--Script di atas merupakan script untuk mengatur dasar dari activity_detail_user
+   Pada script tersebut ditambahkan warna background yaitu berwarna putih dengan menuliskan : android:background="@color/white"
+   Sehingga warna dasar pada tampilan activity_detail_user adalah putih. -->
+
+
+    <TextView
+        android:id="@+id/textDetail"
+        android:layout_width="364dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textDetailuser"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textIsSelectable="false"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--TextView di atas merupakan:
+   1.Sebuah Palette common yang berjenis textView.
+   2. Pada textView ini diberi id agar memudahkan saat pemanggilan nantinya,
+   id textView ini bernama : textDetail.
+   3. textView ini memiliki width:364dp,heigh:42dp,marginStart=16dp, marginTop:8dp, marginEnd=16dp yang semuanya diatur melalui drag and drop.
+   4. Pada textView ini memiliki text yakni "DETAIL USER" yang kemudian text tersebut
+    di ubah menjadi string agar tidak terjadi error dikemudian hari.
+   5. textView ini  menggunakan text color:@color/blue sehingga yang menjadikan
+    tulisan pada textView berwarna biru.
+   6. Text pada textView ini memiliki ukuran 34sp yang diatur dengan memberi script android:textSize="34sp".
+   7. Agar tampilan text lebih tebal maka textView ini juga diberi style bold.
+   8. TextView ini berguna untuk menandakan bahwa user tengah berada pada halaman akhir yakni berisi data diri user.-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/gambarDiri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDetail"
+        app:srcCompat="@drawable/diri" />
+    <!--Pada ImageView di atas terdapat:
+      1. Id yang merupakan identitas dari imageView tersebut agar dapat mudah
+         ketika imageView ini digunakan atau diakses.
+      2. Pada imageView di atas untuk width=129dp,height=89dp,marginStart=16dp,marginTop=8dp,marginEnd=16dp ditentukan menggunakan metode drag and drop.
+      3. Dalam imageView ini terdapat sebuah gambar yang mana gambar ini dicopy dari
+         penyimpanan lokal kemudian di paste dan disimpan  pada drawable.
+      4. ImageView di atas memiliki contentDescription yang kemudian diubah menjadi string menjadi "gambarDiri"
+         ini berguna apabila suatu ketika file gambar tersebut tidak dapat di akses
+         maka akan muncul icon default gambar dengan contentdescriptionnya.-->
+
+    <Button
+        android:id="@+id/buttonLinkedin"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/akunLinkedin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHobby" />
+    <!--1. Button di atas merupakan salah satu palette dari buttons.
+       2. Pada button ini memiliki id yakni buttonLinkedin
+          yang berguna untuk memudahkan pemanggilan ketika akan digunakan pada file. kt.
+       3. Pada button ini diberi text yakni 'AKUN LINKEDIN" yang kemudian diubah kedalam bentuk string.
+       4. Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+        dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+        shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+        serta mendeklarasikan radius dalam <corners></corners>.
+        5. Button ini berfungsi untuk mengarahkan ke halaman profil akun linkedin dari user.-->
+
+    <Button
+        android:id="@+id/buttonGithub"
+        android:layout_width="426dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/akunGithub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLinkedin" />
+    <!--1. Button di atas merupakan salah satu palette dari buttons.
+       2. Pada button ini memiliki id yakni buttonGithub
+          yang berguna untuk memudahkan pemanggilan ketika akan digunakan pada file. kt.
+       3. Pada button ini diberi text yakni 'AKUN GITHUB" yang kemudian diubah kedalam bentuk string.
+       4. Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+        dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+        shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+        serta mendeklarasikan radius dalam <corners></corners>.
+        5. Button ini berfungsi untuk mengarahkan ke halaman profil akun github dari user.-->
+    <Button
+        android:id="@+id/buttonNotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/warna"
+        android:text="@string/btnMotivasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGithub" />
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="409dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textNama"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <!--TextView di atas terdapat:
+   1. Id yang merupakan identitas dari textView tersebut agar dapat mudah
+      ketika textView ini digunakan pada file .kt.
+   2. Pada TextView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+   3. Terdapat text yang berisikan "Nama : May Linda Indriyani" dimana
+      tulisan tersebut kemudian diubah menjadi string.
+   4. TextView ini adalah sebuah deskripsi detail  tentang nama dari user.-->
+
+    <TextView
+        android:id="@+id/textTtl"
+        android:layout_width="411dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textTtl"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNama" />
+    <!-- Pada TextView di atas terdapat:
+      1. Id yang merupakan identitas dari textView tersebut agar dapat mudah
+         ketika textView ini digunakan pada file .kt.
+      2. Pada TextView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+      3. Terdapat text yang berisikan "TTL : Magelang,06 Mei 2001" dimana
+         tulisan tersebut kemudian diubah menjadi string.
+      4. TextView ini adalah sebuah deskripsi detail tentang tempat tanggal lahir  dari user.-->
+
+
+    <TextView
+        android:id="@+id/textHobby"
+        android:layout_width="408dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textHobby"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTtl" />
+    <!--Diatas merupakan TextView yang didalamnya memuat:
+       1. Id yang merupakan identitas dari textView tersebut agar dapat mudah
+          ketika textView ini digunakan pada file .kt.
+       2. Pada TextView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+       3. Terdapat text yang berisikan "Hobby : Membaca Novel" dimana
+          tulisan tersebut kemudian diubah menjadi string.
+       4. TextView ini adalah sebuah deskripsi detail tentang hobby dari user.-->
+</androidx.constraintlayout.widget.ConstraintLayout>

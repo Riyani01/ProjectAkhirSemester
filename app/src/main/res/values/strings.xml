@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Belajar Android Proyek Awal</string>
+    <string name="txtWelcomeback">Welcome Back</string>
+    <string name="textSignIn">Sign in to continue</string>
+    <string name="textCancel">Cancel</string>
+    <string name="buttonSignin">SIGN IN</string>
+    <string name="buttonContinue">Sign in to continue</string>
+    <string name="gambarAwal">Gambar Awal</string>
+    <string name="textLets">Let\'s get something</string>
+    <string name="txtGood">Good to see you back.</string>
+    <string name="textUsername">Username</string>
+    <string name="textPassword">Password</string>
+    <string name="txtLogin">Login</string>
+    <string name="passordIcon">PASSORD ICON</string>
+    <string name="usernameIcon">USERNAME ICON</string>
+    <string name="iconPassword">Password Icon</string>
+    <string name="iconUsername">Username</string>
+    <string name="passIcon">Pass</string>
+    <string name="userName">USERNNAME</string>
+    <string name="passworddd">PASSWORD</string>
+    <string name="textDetailuser">DETAIL USER</string>
+    <string name="gambarDiri">Gambar Diri</string>
+    <string name="textData">Nama : May Linda Indriyani TTL: Magelang,06 Mei 2001 Hobby: Membaca Novel</string>
+    <string name="buttonEmail">Email : imaylinda360@gmail.com</string>
+    <string name="akunLinkedin">Akun Linkedin</string>
+    <string name="akunGithub">AKUN GITHUB</string>
+    <string name="textNama">Nama : May Linda Indriyani</string>
+    <string name="textTtl">TTL : Magelang,06 Mei 2001</string>
+    <string name="textHobby">Hobby : Membaca Novel</string>
+    <string name="btnMotivasi">Motivasi</string>
+
+    <string name="affirmation1">May Linda Kuat.</string>
+    <string name="affirmation2">May Linda Hebat.</string>
+    <string name="affirmation3">May Linda Sukses.</string>
+    <string name="affirmation4">Kalau Capek Istirahat Jangan Nyerah.</string>
+    <string name="affirmation5">Coba Terus .</string>
+    <string name="affirmation6">Bersama Kesulitan Ada Kemudahan.</string>
+    <string name="affirmation7">IPK Harus Naik.</string>
+    <string name="affirmation8">Jangan Sampai Ada Nilai C Lagi .</string>
+    <string name="affirmation9">Kembaliin Uang Beasiswa Banyak Makanya Pinter.</string>
+    <string name="affirmation10">Banggain Orang Tua.</string>
+</resources>

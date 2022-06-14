@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Asus x441b/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout/activity_main_recycler.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/drawable/warna.xml" value="0.1875" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/drawable/warni.xml" value="0.1875" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-h1000dp/activity_login.xml" value="0.1325136612021858" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-h1500dp/activity_main.xml" value="0.1325136612021858" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-h800dp/activity_main.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-land/activity_detail_user.xml" value="0.1" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-land/activity_login.xml" value="0.15167548500881833" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-land/activity_main.xml" value="0.15167548500881833" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-w600dp/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout-w600dp/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout/activity_detail_user.xml" value="0.1" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/BelajarAndroidProyekAwal/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout-h800dp/activity_main.xml" value="0.49" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout-land/activity_detail_user.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout-w600dp/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout/activity_detail_user.xml" value="0.22" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout/activity_main_recycler.xml" value="0.1" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/Pemrograman_Native-main/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/bank/BelajarAndroidProyekAwal/app/src/main/res/layout/activity_login.xml" value="0.17798913043478262" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

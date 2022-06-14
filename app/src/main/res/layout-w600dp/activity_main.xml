@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <!--Script di atas merupakan script untuk mengatur dasar dari activity_main untuk orientasi horizontal.
+    Pada script tersebut ditambahkan warna background yaitu berwarna putih dengan menuliskan : android:background="@color/white"
+    Sehingga warna dasar pada tampilan activity_main adalah putih. -->
+    <!--1. Button di atas merupakan sebuah pallete dengan jenis Button.
+        2. Button ini memiliki id buttonSignin yang menjadi penanda atau mempermudah
+       ketika button ini akan digunakan nantinya.
+        3. Dikarenakan pada kali ini merupakan tam
+        4.Pada Button ini berisi teks "SIGN IN" yang kemudian diubah ke string.
+        5.Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+        dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+        shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+        serta mendeklarasikan radius dalam <corners></corners>.
+        Setelah itu pada activity_main mengambil drawable yang dibuat tadi menjadi background.
+        6. Button ini berguna untuk masuk ke halaman berikutnya nantinya yakni halaman activity_login.xml-->
+
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txtWelcomeback"
+        android:textColor="@color/blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Script di atas merupakan:
+    1.Sebuah Palette common yang berjenis textView.
+    2. Pada textView ini diberi id agar memudahkan saat pemanggilan nantinya,
+       id textView ini bernama : textWelcome.
+    3. textView ini memiliki width:235dp,heigh:40dp, marginTop:36dp yang semuanya diatur
+       melalui drag and drop untuk tampilan landscape ini.
+    4. Pada textView ini memiliki text yakni "Welcome Back" yang kemudian text tersebut
+       di ubah menjadi string agar tidak terjadi error dikemudian hari.
+    5. textView ini  menggunakan text color:@color/blue sehingga yang menjadikan
+       tulisan pada textView berwarna biru.
+    6. Text pada textView ini memiliki ukuran 34sp yang diatur dengan memberi script android:textSize="34sp".
+    7. Agar tampilan text lebih tebal maka textView ini juga diberi style bold.
+    8. TextView ini berguna untuk menandakan bahwa user tengah berada pada halaman awal.-->
+
+    <Button
+        android:id="@+id/buttonSignin"
+        android:layout_width="373dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/buttonSignin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAwal" />
+    <!--1. Button di atas merupakan sebuah pallete dengan jenis Button.
+        2. Button ini memiliki id buttonSignin yang menjadi penanda atau mempermudah
+       ketika button ini akan digunakan nantinya.
+        3. Dikarenakan pada kali ini merupakan tampalin landscape sehingga mengalami perubahan ukuran yakni menjadi
+        width="373dp",height="52dp",marginStart="16dp",marginTop="4dp",marginEnd="16dp".
+        4.Pada Button ini berisi teks "SIGN IN" yang kemudian diubah ke string.
+        5.Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+        dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+        shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+        serta mendeklarasikan radius dalam <corners></corners>.
+        Setelah itu pada activity_main mengambil drawable yang dibuat tadi menjadi background.
+        6. Button ini berguna untuk masuk ke halaman berikutnya nantinya yakni halaman activity_login.xml-->
+
+
+
+
+    <Button
+        android:id="@+id/buttonCencel"
+        android:layout_width="371dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/warna"
+        android:text="@string/textCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignin" />
+    <!--1. Button di atas merupakan sebuah pallete dengan jenis Button.
+    2. Button ini memiliki id buttonCancel yang menjadi penanda atau mempermudah
+    ketika button ini akan digunakan nantinya.
+    3. Dikarenakan pada kali ini merupakan tampalin landscape sehingga mengalami perubahan ukuran yakni menjadi:
+        android:layout_width="371dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+    4.Pada Button ini berisi teks "CANCEL" yang kemudian diubah ke string.
+    5.Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+     dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+     shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+     serta mendeklarasikan radius dalam <corners></corners>.
+     Setelah itu pada activity_main mengambil drawable yang dibuat tadi menjadi background.
+    7. Button ini berguna untuk mengakhiri atau menutup aplikasi nantinya.-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="235dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:elegantTextHeight="false"
+        android:hint="@string/buttonContinue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome"
+        tools:ignore="TextContrastCheck" />
+    <!--Pada TextView di atas terdapat:
+        1. Id yang merupakan identitas dari textView tersebut agar dapat mudah
+           ketika textView ini digunakan pada file .kt.
+        2. Pada TextView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+        3. Terdapat hint yang berisikan "Sign in to continue" dimana
+           tulisan tersebut kemudian diubah menjadi string.
+        4. TextView ini adalah sebuah deskripsi yang mengingatkan atau
+           sebagai petunjuk kepada user untuk melakukan atau menekan tombol(button) Sign In.-->
+
+
+    <ImageView
+        android:id="@+id/imageAwal"
+        android:layout_width="125dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/gambarAwal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/bbb"
+        tools:ignore="ImageContrastCheck" />
+
+    <!--Pada ImageView di atas terdapat:
+       1. Id yang merupakan identitas dari imageView tersebut agar dapat mudah
+          ketika imageView ini digunakan atau diakses.
+       2. Pada imageView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+       3. Dalam imageView ini terdapat sebuah gambar yang mana gambar ini dicopy dari
+          penyimpanan lokal kemudian di paste dan disimpan  pada drawable.
+       4. ImageView di atas memiliki contentDescription yang kemudian diubah menjadi string menjadi "@string/gambarAwal
+          ini berguna apabila suatu ketika file gambar tersebut tidak dapat di akses
+          maka akan muncul icon default gambar dengan contentdescriptionnya.-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

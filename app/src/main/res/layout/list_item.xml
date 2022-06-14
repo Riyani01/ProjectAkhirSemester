@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--file xml ini yang mengatur tata letak dengan nama list_item,dibuat melalui: tekan File > New > Layout Resource File, beri nama filelist_item.xml
+atau letak item daftar ini  menggunakan palette TextView yang nantinya akan meningkat dan ditambahkan sebagai turunan ke induk RecyclerView
+Disini juga dapat mengatur ukuran tiap-tiap item yang dirender,serta warna yang digunakan sebagai background item.-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/blue"
+    android:padding="8dp"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:textStyle="bold">
+
+</TextView>

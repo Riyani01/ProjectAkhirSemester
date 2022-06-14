@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Dikarenakan yang akan dalam recyclerview ini hanya akan menampilkan satu tampilan turunan saja,
+ maka diperlukan perubahan dalam file activity_main_recycler.xml, yakni merubah tata letak constraintlayout yang fleksibel
+ menjadi framelayout yang menyimpan satu turunan saja.
+
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivityRecycler">
+
+    <!-- Didalam framelayout ini terdapat widget recyclerview yang memiliki
+    layout match_parent sehingga tampilannya memenuhi keseluruhan halaman.
+    Agar dapat menggulirkan daftar item  panjang maka diperlukan  scrollbar vertikal.
+    Untuk dapat mengelola tata letak pada recyclerview maka dapat menambahkan atribut layoutmanager. -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager" />
+
+
+
+</FrameLayout>

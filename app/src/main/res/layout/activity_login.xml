@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+    <!--Script di atas merupakan script untuk mengatur dasar dari activity_login.
+       Pada script tersebut ditambahkan warna background yaitu berwarna putih dengan menuliskan : android:background="@color/white"
+       Sehingga warna dasar pada tampilan activity_login adalah putih. -->
+
+    <!--Script di atas merupakan:
+   1.Sebuah Palette common yang berjenis textView.
+   2. Pada textView ini diberi id agar memudahkan saat pemanggilan nantinya,id textView ini bernama : textLets.
+   3. textView ini memiliki width:409dp,heigh:51dp, marginTop:84dp yang semuanya diatur melalui drag and drop.
+   4. Pada textView ini memiliki text yakni "Let's get something" yang kemudian text tersebut
+    di ubah menjadi string agar tidak terjadi error dikemudian hari.
+   5. textView ini  menggunakan text color:@color/blue sehingga yang menjadikan
+    tulisan pada textView berwarna biru.
+   6. Text pada textView ini memiliki ukuran 34sp yang diatur dengan memberi script android:textSize="34sp".
+   7. Agar tampilan text lebih tebal maka textView ini juga diberi style bold.
+   8. TextView ini berguna untuk menandakan bahwa user tengah berada pada halaman kedua
+      yakni halaman setelah tombol sign in ditekan.-->
+
+
+    <!--TextView di atas memuat:
+        1. Id yang merupakan identitas dari textView tersebut agar dapat mudah
+           ketika textView ini digunakan.
+        2. Pada TextView di atas untuk height,width ditentukan menggunakan metode drag and drop.
+        3. Terdapat hint yang berisikan "Good to see you back" dimana
+           tulisan tersebut kemudian diubah menjadi string.
+        4. TextView ini adalah sebuah deskripsi yang mengingatkan atau
+           sebagai petunjuk kepada user bahwa kini user berada pada halaman login
+           dan diminta untuk memasukkan username dan password.-->
+
+    <TextView
+        android:id="@+id/textLets"
+        android:layout_width="377dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/textLets"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textGood"
+        android:layout_width="385dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txtGood"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLets"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="272dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="USERNAME"
+        android:ems="10"
+        android:hint="@string/textUsername"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGood"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+    <!--1. EditText di atas merupakan salah satu pallete dari text yaitu password.
+        2. Pada edit text tersebut terdapat id yang digunakan sebagai
+           identitas atau mempermudah saat pemanggilan ketika hendak digunakan.
+        3. EditText ini memiliki text hint yakni "Username" yang kemudian diubah menjadi string,
+           Fungsi adanya text hint ini adalah untuk mengingatkan atau
+           memberitahu kepada user bahwa dalam bagian editText ini diminta untuk memasukkan username.
+           -->
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="284dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="64dp"
+        android:autofillHints="PASSWORD"
+        android:ems="10"
+        android:hint="@string/textPassword"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername"
+        tools:ignore="TextContrastCheck" />
+    <!--1. EditText di atas merupakan salah satu pallete dari text yaitu password numerik,
+          yang mana hanya dapat menerima inputan angka saja.
+       2. Pada edit text tersebut terdapat id yang digunakan sebagai
+          identitas atau mempermudah saat pemanggilan ketika hendak digunakan.
+       3. EditText ini memiliki text hint yakni "Password" yang kemudian diubah menjadi string,
+          Fungsi adanya text hint ini adalah untuk mengingatkan atau
+          memberitahu kepada user bahwa dalam bagian editText ini diminta untuk memasukkan password.-->
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="164dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/warna"
+        android:text="@string/txtLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+    <!--1. Button di atas merupakan salah satu palette dari buttons.
+        2. Pada button ini memiliki id yakni buttonLogin
+           yang berguna untuk memudahkan pemanggilan ketika akan digunakan pada file. kt.
+        3. Pada button ini diberi text yakni 'LOGIN" yang kemudian diubah kedalam bentuk string.
+        4. Agar tampilan Button tidak berbentuk persegi panjang maka pada drawable
+         dibuat sebuah drawable resource file  dengan mengubah terlebih dahulu menjadi
+         shape xmln,kemudian mendeklarasikan color didalam <solid></solid>,
+         serta mendeklarasikan radius dalam <corners></corners>.
+         5. Button ini berfungsi untuk mengarahkan ke halaman berikutnya ketika diklik.-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toStartOf="@+id/textUsername"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGood"
+        app:srcCompat="@drawable/icon"
+        android:contentDescription="@string/userName" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/textPassword"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/lock"
+        android:contentDescription="@string/passworddd" />
+    <!-- Dua buah imageView diatas merupakan :
+     1. ImageView merupakan salah satu jenis palette Common.
+     2. Masing-masing memiliki id yakni imageView5 pada image disamping username
+        dan imageView6 yang merupakan  image disamping password.
+     3. Kedua buah image ini merupakan image dalam perangkat yang kemudian dicopy dan di paste pada drawable.-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
